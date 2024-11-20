@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tela de Login</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" crossorigin="anonymous">
+        <style>
+            body {
+                color: black;
+            }
+            .btn-custom {
+                background-color: #D15FEE;
+                color: black;
+                border: none;
+            }
+            .btn-custom:hover {
+                background-color: #c457d1;
+                color: white;
+            }
+            .navbar, .card {
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: black;">
+                    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logomarca" width="30" height="24" class="d-inline-block align-text-top">
+                    Tela de Login
+                </a>
+            </div>
+        </nav>
+        
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="card shadow-lg" style="width: 100%; max-width: 400px; padding: 20px;">
+                <div class="card-body">
+                    <h3 class="text-center">Login</h3>
+                    <p class="text-muted text-center">Por favor, insira suas credenciais</p>
+                    <form>
+                        <!-- Campo de e-mail -->
+                        <div class="mb-3">
+                            <label for="emailUsuario" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="emailUsuario" placeholder="nome@email.com">
+                        </div>
+                        <!-- Campo de senha -->
+                        <div class="mb-3">
+                            <label for="senhaUsuario" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="senhaUsuario" placeholder="Digite sua senha">
+                        </div>
+                        <!-- Botão de login -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-custom">
+                                <i class="fas fa-sign-in-alt"></i> Entrar
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Links adicionais -->
+                    <div class="mt-3 text-center">
+                        <a href="#" class="text-decoration-none" style="color: black;">Esqueceu a senha?</a>
+                        <br>
+                        <a href="#" class="text-decoration-none" style="color: black;">Criar uma conta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-rO9gkFjHNF1wA1mj/z1sKU5k+5knU5BHeO+GpCvoVPEE3fHRPOm7Hy0xK39J6VxI" crossorigin="anonymous"></script>
+    </body>
+</html>
